@@ -1,7 +1,11 @@
 const const express = require('express')
 const app = express()
-const port = 3000
 
-app.get('/', (req, res) => res.send('Hello World backend'))
+app.get('/', (req, res) =>{
+  res.json({
+      mesg:'hello backend'
+   })
+})
+  
 
 app.listen(3000)
